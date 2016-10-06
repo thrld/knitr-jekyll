@@ -2,6 +2,8 @@
 layout: post
 title: "Blogging with knitr and Jekyll"
 date: 2016-05-22
+section: blog
+output: html_document
 ---
 
 
@@ -14,6 +16,17 @@ I hope coloring this up a little won't be to complicated. But see for yourselves
 <hr>
 
 ## R Markdown
+
+Let us add comment
+
+{% highlight r %}
+# This is a short vector:
+x <- 1:3
+{% endhighlight %}
+
+What does an inline result look like? The first element of `x` is 1.
+
+What follows is `R`'s default markdown document.
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
@@ -40,6 +53,7 @@ summary(cars)
 
 You can also embed plots, for example:
 
-<img src="/figure/source/2016-05-22-blogging-with-knitr-and-Jekyll/pressure-1.png" title="plot of chunk pressure" alt="plot of chunk pressure" style="display: block; margin: auto;" />
+<img src="/knitr-jekyll/figure/source/2016-05-22-blogging-with-knitr-and-Jekyll/pressure-1.png" title="plot of chunk pressure" alt="plot of chunk pressure" style="display: block; margin: auto;" />
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
+
